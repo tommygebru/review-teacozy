@@ -1,0 +1,149 @@
+/*********************************
+             B A S E
+*********************************/
+* {
+  /*background: rgba(0,0,0,.125);*/
+}
+
+body, html {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*********************************
+          H E A D E R
+*********************************/
+header{
+  position: fixed;
+  top: 0;
+  height: 69px;
+  border-bottom: seashell solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 100%;
+  background: black;
+}
+
+header img {
+  height: 50px;
+}
+
+/*********************************
+       N A V I G A T I O N
+*********************************/
+main {
+  margin: 69px auto;
+  background-image: url("./resources/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*********************************
+       N A V I G A T I O N
+*********************************/
+header nav a {
+  margin: 0 15px;
+  text-decoration: underline;
+}
+
+/*********************************
+          B A N N E R
+*********************************/
+.banner-message {
+  width: inherit;
+  background:black;
+}
+.banner-message h2, .banner-message h4{
+  margin: 15px;
+}
+
+/*********************************
+    S E C T I O N . M O N T H
+*********************************/
+section.tea-month * {
+  /*border: 2.5px dotted teal;*/
+}
+
+section.tea-month {
+  width: 1000px;
+  margin: 70px auto;
+
+}
+section.tea-month .tea-wrap{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+section.tea-month .tea-wrap div {
+  margin: 10px;
+}
+
+section.tea-month .tea-wrap div span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+section.tea-month img{
+  height: 200px;
+  width: inherit;
+}
+
+/*********************************
+S E C T I O N . L O C A T I O N S
+*********************************/
+section.tea-locations * {
+  /*border: 2.5px dotted teal;*/
+}
+section.tea-locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./resources/img-locations-background.jpg");
+  background-position: center;
+  height: 500px;
+  width: 1200px;
+  margin: 0 auto;
+}
+section.tea-locations .locations-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+section.tea-locations .locations-wrap article  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 280px;
+  background: black;
+  opacity:1;
+}
+section.tea-locations .locations-wrap article h3,
+section.tea-locations .locations-wrap article span {
+  padding: 0;
+  margin: 0;
+}
+footer {
+  height: 200px;
+}
+aside h5 {
+  text-align: left;
+  text-indent: 20px;
+}
