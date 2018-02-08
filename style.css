@@ -15,6 +15,24 @@ body, html {
   margin: 0 auto;
 }
 
+
+.flex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.column{
+  flex-direction:column;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.between{
+  justify-content: space-between;
+}
+.around{
+  justify-content: space-around;
+}
 /*********************************
           H E A D E R
 *********************************/
@@ -23,9 +41,6 @@ header{
   top: 0;
   height: 69px;
   border-bottom: seashell solid 1px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 10px;
   width: 100%;
   background: black;
@@ -35,6 +50,9 @@ header img {
   height: 50px;
 }
 
+header nav a {
+  color:inherit;
+}
 /*********************************
        N A V I G A T I O N
 *********************************/
@@ -43,10 +61,6 @@ main {
   background-image: url("./resources/img-mission-background.jpg");
   height: 700px;
   width: 1200px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-
 }
 
 /*********************************
@@ -80,12 +94,10 @@ section.tea-month {
   margin: 70px auto;
 
 }
-section.tea-month .tea-wrap{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+
+section.tea-month .tea-wrap {
 }
+
 section.tea-month .tea-wrap div {
   margin: 10px;
 }
@@ -108,10 +120,6 @@ section.tea-locations * {
   /*border: 2.5px dotted teal;*/
 }
 section.tea-locations {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url("./resources/img-locations-background.jpg");
   background-position: center;
   height: 500px;
@@ -119,17 +127,11 @@ section.tea-locations {
   margin: 0 auto;
 }
 section.tea-locations .locations-wrap{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 1000px;
   margin: 0 auto;
 }
 section.tea-locations .locations-wrap article  {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   width: 300px;
   height: 280px;
   background: black;

@@ -6,26 +6,26 @@
     <link href="style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="flex between">
       <div class="logo">
         <img src="resources/img-tea-cozy-logo.png" alt="logo_image" />
       </div>
       <nav>
-        <span><a>Mission</a></span>
-        <span><a>Featured Tea</a></span>
-        <span><a>Locations</a></span>
+        <span><a href="#mission">Mission</a></span>
+        <span><a href="#featured-tea">Featured Tea</a></span>
+        <span><a href="#locations">Locations</a></span>
       </nav>
     </header>
-    <main>
+    <main id="mission" class="flex">
       <div class="banner-message">
         <h2>Our Mission</h2>
         <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
       </div>
     </main>
-    <section class="tea-month">
+    <section id="featured-tea" class="tea-month">
       <h2>Tea of the Month</h2>
       <h4>What's Steeping at The Tea Cozy?</h4>
-      <div class="tea-wrap">
+      <div class="tea-wrap flex wrap">
         <div>
           <img src="resources/img-berryblitz.jpg">
           <span>Fall Berry Blitz Tea</span>
@@ -48,22 +48,22 @@
         </div>
       </div><!--teas-->
     </section><!--tea-month-->
-    <section class="tea-locations">
+    <section id="locations" class="tea-locations flex column">
       <h1>Locations</h1>
-      <div class="locations-wrap">
-      <article>
+      <div class="locations-wrap flex between">
+      <article class="flex column around">
         <h3>Downtown</h3>
         <span>384 West 4th St</span>
         <span>Suite 108</span>
         <span>Portland, Maine</span>
       </article>
-      <article>
+      <article class="flex column around">
         <h3>East Bayside</h3>
         <span>3433 Phisherman's Avenue</span>
         <span>(Northwest Corner)</span>
         <span>Portland, Maine</span>
       </article>
-      <article>
+      <article class="flex column around">
         <h3>Oakdale</h3>
         <span>515 Crescent Avenue</span>
         <span>Second Floor</span>
